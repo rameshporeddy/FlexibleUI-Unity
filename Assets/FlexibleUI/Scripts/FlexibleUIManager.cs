@@ -9,22 +9,9 @@ namespace FlexibleUI
     public class FlexibleUIManager : MonoBehaviour
     {
         public static event Action UIChanged = () => { };
-        private static FlexibleUIData _uiData;
+        public static ThemeList themeList;
         public static FlexibleUIManager instance;
         private static bool isInitialized;
-        public static FlexibleUIData UIData {
-            get {
-                if (isInitialized)
-                {
-                    return _uiData;
-                }
-                else
-                {
-                    throw new Exception("Init FlexibleUIManager at start of the game");
-                }
-                
-            }
-        }
         
 
         // Start is called before the first frame update
@@ -32,23 +19,24 @@ namespace FlexibleUI
         {
 
         }
-        public static void Init(FlexibleUIData data)
+        public static void Init(ThemeList list, int themeIndex = 0)
         {
             if (!isInitialized)
             {
                 isInitialized = true;
-                _uiData = data;
+                themeList = list;
+                ChangeUI(themeIndex);
+
 
             }
             else
             {
                 Debug.LogWarning("FlexibleUIManager is already intialized");
             }
-
         }
-        public static void ChangeUI(FlexibleUIData data)
+        public static void ChangeUI(int themeIndex)
         {
-            _uiData = data;
+            themeList.SetTheme(themeIndex);
             UIChanged();
         }
 

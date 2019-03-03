@@ -1,5 +1,4 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 using UnityEngine;
 
 namespace FlexibleUI
@@ -8,9 +7,9 @@ namespace FlexibleUI
     public class FlexibleUIBase : MonoBehaviour
     {
         [SerializeField]private string id;
-        [SerializeField] private FlexibleUIData editorOnlyUIData;
         private FlexibleUIData UIData;
         private object flexibleObjectData;
+        private ThemeList themeList;
         // Start is called before the first frame update
         public virtual void Start()
         {
@@ -18,7 +17,17 @@ namespace FlexibleUI
         }
         public virtual void OnEnable()
         {
+            if (Application.isEditor)
+            {
+                themeList = Resources.Load<ThemeList>("FlexibleUI/ThemeList");
+            }
+            else
+            {
+                themeList = FlexibleUIManager.themeList;
+            }
+            
             FlexibleUIManager.UIChanged += OnUIChanged;
+           
         }
 
         public virtual void OnDisable()
@@ -28,14 +37,7 @@ namespace FlexibleUI
 
         private void OnUIChanged()
         {
-            if (Application.isEditor)
-            {
-                UIData = editorOnlyUIData;
-            }
-            else
-            {
-                UIData = FlexibleUIManager.UIData;
-            }
+            UIData = themeList.currentTheme;
             if (UIData != null)
             {
                 FieldInfo fieldInfo = UIData.GetType().GetField(id);

@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c6accfeb9bb794b82641fb808c8600, type: 3}
+  m_Name: Cartoon
+  m_EditorClassIdentifier: 
+  buttonSpriteSwapText:
+    font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    fontSize: 22
+    fontStyle: 1
+    color: {r: 0.025587406, g: 0.17601858, b: 0.23584908, a: 1}
+    material: {fileID: 0}
+  buttonSpriteSwap:
+    sourceImage: {fileID: 21300000, guid: 242fffb8377372b47895ec20f5a5ec2d, type: 3}
+    material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 1
+    setNativeSize: 1
+    spriteState:
+      m_HighlightedSprite: {fileID: 21300000, guid: 9208f2b60dedbd34b97e27d5082e956c,
+        type: 3}
+      m_PressedSprite: {fileID: 21300000, guid: 546b7b5b01f1ffd41bac9f24e9bfada1,
+        type: 3}
+      m_DisabledSprite: {fileID: 21300000, guid: 6e66bb159c14d844580544244bf0d9d5,
+        type: 3}
+  toggleCheckMark:
+    sourceImage: {fileID: 21300000, guid: 313bd1bdad2d49d4e812ba09b35cad76, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 0
+    setNativeSize: 0
+  toggleBackground:
+    sourceImage: {fileID: 21300000, guid: 91d326790dfa41d48b9904b67cedf60c, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 0
+    setNativeSize: 0
+  toggleLableText:
+    font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    fontSize: 30
+    fontStyle: 3
+    color: {r: 0.6427109, g: 0.86560917, b: 0.9528302, a: 1}
+    material: {fileID: 0}
+  sliderBackground:
+    sourceImage: {fileID: 21300000, guid: 60864a6eb1b80bd47b1317fed5105fbc, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 1
+    setNativeSize: 0
+  sliderFill:
+    sourceImage: {fileID: 21300000, guid: 274c62aa3771c6d47bd03315a0fb9595, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 1
+    setNativeSize: 0
+  sliderKnob:
+    sourceImage: {fileID: 21300000, guid: 6f30ed06308d42f4682706e3e79173a1, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 0
+    setNativeSize: 0
+  ddSelectedText:
+    font: {fileID: 12800000, guid: 1bb3c0b880131cc4fba43d69966e837e, type: 3}
+    fontSize: 28
+    fontStyle: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+    material: {fileID: 0}
+  ddSelectedBackground:
+    sourceImage: {fileID: 21300000, guid: 9c047de7b329796439ffb6efa467b112, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 1
+    setNativeSize: 0
+  ddArrow:
+    sourceImage: {fileID: 21300000, guid: 031411cfd15824643a4ccdedb8d36bc2, type: 3}
+    material: {fileID: 0}
+    color: {r: 0.98823535, g: 0.8862746, b: 0.23529413, a: 0.60784316}
+    type: 0
+    setNativeSize: 0
+  ddTemplateBackground:
+    sourceImage: {fileID: 21300000, guid: a3bba806bc4d8c84e8b5b5087f9fd709, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 1
+    setNativeSize: 0
+  ddItemCheckMark:
+    sourceImage: {fileID: 21300000, guid: c2970a15d17fc144a987f3de86f2eebf, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 0
+    setNativeSize: 0
+  ddItemBackground:
+    sourceImage: {fileID: 0}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 0.30588236}
+    type: 0
+    setNativeSize: 0
+  ddItemText:
+    font: {fileID: 12800000, guid: 1bb3c0b880131cc4fba43d69966e837e, type: 3}
+    fontSize: 26
+    fontStyle: 1
+    color: {r: 0.2784314, g: 0.52156866, b: 0.15686275, a: 1}
+    material: {fileID: 0}
+  ddSliderBackground:
+    sourceImage: {fileID: 21300000, guid: da2f886058ba8914e8f87613a16cb662, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 1
+    setNativeSize: 0
+  ddSliderHandle:
+    sourceImage: {fileID: 21300000, guid: 012a4f7edf86bb5468e5ce4d32647015, type: 3}
+    material: {fileID: 0}
+    color: {r: 0.2784314, g: 0.52156866, b: 0.15686275, a: 0.65882355}
+    type: 1
+    setNativeSize: 0
+  inputFieldPlaceHolder:
+    font: {fileID: 12800000, guid: 1bb3c0b880131cc4fba43d69966e837e, type: 3}
+    fontSize: 24
+    fontStyle: 0
+    color: {r: 0.49056602, g: 0.47114664, b: 0.242969, a: 1}
+    material: {fileID: 0}
+  inputFieldBackground:
+    sourceImage: {fileID: 21300000, guid: a3bba806bc4d8c84e8b5b5087f9fd709, type: 3}
+    material: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    type: 1
+    setNativeSize: 0
+    selectionColor: {r: 0.28235295, g: 0.52156866, b: 0.15686275, a: 0.49803922}
+  inputFieldText:
+    font: {fileID: 12800000, guid: 1bb3c0b880131cc4fba43d69966e837e, type: 3}
+    fontSize: 24
+    fontStyle: 0
+    color: {r: 0.11320752, g: 0.103884555, b: 0, a: 1}
+    material: {fileID: 0}
