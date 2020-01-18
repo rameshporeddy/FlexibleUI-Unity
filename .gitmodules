@@ -1,0 +1,3 @@
+[submodule "Assets/FlexibleUI/FlexibleUIPackage"]
+	path = Assets/FlexibleUI/FlexibleUIPackage
+	url = https://github.com/rameshporeddy/FlexibleUIPackage.git
