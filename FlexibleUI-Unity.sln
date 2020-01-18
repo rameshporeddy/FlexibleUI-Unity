@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexibleUI", "FlexibleUI.csproj", "{23AB0C3C-8603-B893-6AC1-7B7BBC6AE9AD}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{FFA51C6B-B0FD-4AB4-6532-D4324BA8B016}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23AB0C3C-8603-B893-6AC1-7B7BBC6AE9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23AB0C3C-8603-B893-6AC1-7B7BBC6AE9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23AB0C3C-8603-B893-6AC1-7B7BBC6AE9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23AB0C3C-8603-B893-6AC1-7B7BBC6AE9AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FFA51C6B-B0FD-4AB4-6532-D4324BA8B016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FFA51C6B-B0FD-4AB4-6532-D4324BA8B016}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA51C6B-B0FD-4AB4-6532-D4324BA8B016}.Release|Any CPU.ActiveCfg = Release|Any CPU
