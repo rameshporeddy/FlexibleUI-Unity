@@ -1,3 +1,6 @@
 [submodule "Assets/FlexibleUI/FlexibleUIPackage"]
 	path = Assets/FlexibleUI/FlexibleUIPackage
 	url = https://github.com/rameshporeddy/FlexibleUIPackage.git
+[submodule "Assets/FlexibleUI/SaveManagerPackage"]
+	path = Assets/FlexibleUI/SaveManagerPackage
+	url = https://github.com/rameshporeddy/SaveManagerPackage.git
